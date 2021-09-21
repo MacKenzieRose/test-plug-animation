@@ -19,3 +19,69 @@ html {
 *::after {
   box-sizing: inherit;
 }
+
+/* START STYLING PAGE ELEMENTS */
+
+body {
+  margin: 0 auto;
+  max-width: 60em;
+}
+
+header {
+  padding: 2rem;
+}
+
+header > h1,
+header > p {
+  margin: 0;
+}
+
+h2 {
+  margin: 2rem 2rem 0;
+}
+
+div.blue-container, 
+div.slate-container {
+  display: flex;
+  background-color: darkblue;
+  justify-content: space-between;
+  padding: 2rem;
+}
+
+div.slate-container {
+  background-color: #111;
+}
+
+.plug-face {
+  max-width: 145px;
+}
+
+div.blue-container > p,
+div.slate-container > p {
+  color: #fff;
+  max-width: 24rem;
+}
+
+footer {
+  padding: 2rem;
+  background-color: #eee;
+}
+
+/* END STYLING PAGE ELEMENTS */
+/* START INTERACTIVE SVG CODE */
+
+/* Set the hover transition speed and easing */
+#right-eye {
+  transition: all .5s ease-in-out;
+}
+
+/* Manually adjust the size and position of the winking eye to look natural */
+svg.plug-face:hover #right-eye,
+svg.plug-face:active #right-eye {
+  y: 58px;
+  height: 9px;
+  x: 86px;
+  width: 20px;
+}
+
+/* END INTERACTIVE SVG CODE */
