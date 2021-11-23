@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en-ca">
+<head>
+  <meta charset="utf-8">
+  <title>2B Wired · Plug Hover Animation</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name=“handheldfriendly” content=“true”>
+  <meta name=“mobileoptimized” content=“true”>
+  <link rel="shortcut icon" href="favicon.ico">
+  <link rel="icon" type="image/png" href="favicon-196.png">
+  <link href="css/main.css" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <h1>Adding hover states to SVGs</h1>
+    <p>A crash course in pure CSS interactive solutions</p>
+  </header>
+  
+  <main>
+    <!-- This is a general image embed for this brand's SVG icon-->
+    <h2>This is the embedded, static SVG file</h2>
+    <div class="blue-container">
+      <p>Hey there! I'm an SVG. I look great at all sizes, but I'm not that exciting because I don't move.</p>
+      <img class="plug-face" src="images/2b-wired-face.svg" alt="">
+    </div>
+    <h2>This is the SVG file written into HTML, with CSS transitions</h2>
+
+    <!--The same SVG code, but brought directly into the HTML file, making the id elements directly targetable in the CSS. This is only easily doable when the exported SVG has properly named layers. Since the particular interativity requested was a hover state, and not a looping animation, transitions will be used instead of keyframes-->
+    <div class="slate-container">
+      <p>Hover on my face to see the interactive state; inspect this code to learn more about how I was built.</p>
+      <svg class="plug-face" id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" width="145" height="145" viewBox="0 0 145 145">
+        <circle id="medium-blue-circle" cx="72.5" cy="72.5" r="72.5" fill="#0063a7"/>
+        <circle id="dark-blue-circle" cx="72.5" cy="72.5" r="64" fill="#14284b"/>
+        <circle id="white-circle" cx="72.5" cy="72.5" r="58.7" fill="#fefefe"/>
+        <rect id="left-eye" x="47.3" y="44.3" width="8.8" height="34.42" fill="#14284b"/>
+        <rect id="right-eye" x="88.8" y="49.9" width="8.8" height="22.87" fill="#14284b"/>
+        <path id="mouth" d="M62.4,100.5a10.1,10.1,0,0,0,10.1,10.1h0a10.1,10.1,0,0,0,10.1-10.1v-12H62.4Z" fill="#14284b"/>
+      </svg>
+    </div>
+  </main>
+  
+  <footer>
+    <p><small>Brought to you by a wannabe designer-developer at MK Design · 2021</small></p>
+  </footer>
+</body>
+</html>

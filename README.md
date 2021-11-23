@@ -1,6 +1,6 @@
-# HVAC Icon Animations
+# Test Plug animation
 ----
-The goal is to create an interactive, looping cycle for the homepage primary icons. Please adapt the code in this repository as you see fit during development.
+The goal is to create an interactive winking hover state. Please adapt the code in this repository as you see fit during development.
 
 Cheers!
 MacKenzie
